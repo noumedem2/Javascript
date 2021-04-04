@@ -8,42 +8,7 @@
  * spread
  */
 
-/**
- * Tableau complexe ou tableau multidimensionnel
- */
-let complexArray = [
-    [
-        {
-            one: 1,
-            two: 2
-        },
-        {
-            three: 3,
-            four: 4
-        }
-    ],
-    [
-        {
-            a: "a",
-            b: "b"
-        },
-        {
-            c: "c",
-            d: "d"
-        }
-    ]
-];
-let yourArray;
-yourArray = [
-    [], true, 'Hello', 1, []
-]
-/**
- * Modifier la valeur d'un index de tableau
- */
-let arr = [1, '2', true]
-arr[2] = false
-// console.log(arr);
-// [1, "2", false]
+
 
 /**
  * Ajouter un element a la fin d'un tableau
