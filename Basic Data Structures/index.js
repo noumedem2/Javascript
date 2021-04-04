@@ -8,13 +8,6 @@
  * spread
  */
 
-
-/**
- * Ajouter un element au debut de tableau
- */
-arr.unshift('element ajouter au debut')
-// console.log(arr);
-// ["element ajouter au debut", 1, "2", false, "element ajouter a la fin"]
 /**
  * Suprimer un element a la fin ou au debut d'un tableau
  */
