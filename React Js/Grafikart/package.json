@@ -1,0 +1,12 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/plugin-transform-react-jsx-compat": "^7.12.13",
+    "@babel/plugin-transform-typescript": "^7.13.0"
+  }
+}

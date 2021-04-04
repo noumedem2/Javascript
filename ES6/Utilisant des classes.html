@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Utiliser des classes</title>
+	</head>
+	<body>
+        <script>
+            class User{
+
+                //Definir les proprietes et definir les classes
+                constructor(firstName,lastName,age,email){
+                    this._firstName = firstName
+                    this._lastName = lastName
+                    this._age = age
+                    this._email = email
+                }
+                // getter
+                get firstName() {
+                    return this._firstName
+                }   
+                // setter
+                set firstName(firstName) {
+                     this._firstName = firstName
+                }
+                // methdode
+                presentation(){
+                    return `FirstName : ${this._firstName} \nLastName : ${this._lastName} \nAge : ${this._age} \nEmail : ${this._email}`
+                }
+            }
+            john =  new User('John','Doe',12,'johndoe@example.com')
+            console.log(john.firstName);
+            // FirstName : John 
+            // LastName : Doe 
+            // Age : 12 
+            // Email : johndoe@example.com
+            const {firstName,lastName,age,email} = john
+            // console.log(firstName,lastName,age,email);
+            // John Doe 12 johndoe@example.com
+        </script>
+    </body>
+</html>

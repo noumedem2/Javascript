@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+    //Extraction d'objects
+    const user = {
+        name: 'noumedem',
+        age: 12
+    }
+    const {name , age} = user;
+    /** console.log(name, age);
+     noumedem 12 **/
+    // Definir la variable repris dans l'object
+    const { name: userName, age: userAge } = user;
+    /** console.log(userName,userAge);
+    noumedem 12 **/
+    // Recuperer le contenu d'une variable imbriquee
+    const users = {
+        johnDoe: { 
+            firstName : 'jane',
+            lastName: 'Doe',
+            age: 34,
+            email: 'johnDoe@exemaple.com'
+        },
+        janeDoe: {
+            firstName : 'jane',
+            lastName: 'Doe',
+            age:39,
+            email: 'janeDoe@example.com'
+        },
+        peterDoe: { 
+            firstName : 'peter',
+            lastName: 'Doe',
+            age: 34,
+            email: 'peterDoe@exemaple.com'
+        }
+    };
+    const { janeDoe : {firstName:userFistname,lastName:userLastname,age:userage,email:useremail} } = users
+    // console.log(userFistname,userLastname,userage,useremail);
+    // jane Doe 39 janeDoe@example.com
+    // Recuperer la valuer d'un tableau
+    const [a, b] = [1, 2, 3, 4, 5, 6];
+    // console.log(a, b);
+    // 1 2
+    const [a1, b1,,, c1] = [1, 2, 3, 4, 5, 6];
+    // console.log(a1, b1, c1);
+    // 1 2 5
+    const [a2, b2, ...arr] = [1, 2, 3, 4, 5, 7];
+    // console.log(a2, b2);
+    // 1 2
+    // console.log(arr);
+    // [3, 4, 5, 7]
+    const Presentation = (users) => {
+        const { janeDoe : {firstName:userFistname,lastName:userLastname,age:userage,email:useremail} } = users
+        return `FirstName : ${userFistname} \nLastName : ${userLastname} \nAge : ${userage} \nEmail : ${useremail}`
+    }
+    console.log(Presentation(users));
+    // FirstName : jane
+    // LastName : Doe 
+    // Age : 39
+    // Email : janeDoe@example.com
+    </script>
+</body>
+</html>

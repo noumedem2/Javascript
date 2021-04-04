@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Constante en javascript</title>
+	</head>
+	<body>
+		<script>
+		const a = () => {
+            return "Fonction fleche"
+        }
+		//console.log(a);
+		//>> Fonction fleche
+
+		const parameter = (parameter) => {
+            return "You Parameter Is "+parameter
+        }
+        // console.log(parameter(1));
+		// You Parameter Is 1
+		const defaultParameter = (name = "Noumedem Tami Florian") => {
+            return "You Name Is "+name
+        }
+		// console.log(defaultParameter());
+		// You Name Is Noumedem Tami Florian
+		// console.log(defaultParameter('Jesus Christ'));
+		// You Name Is Jesus Christ
+		</script>
+	</body>
+</html>
