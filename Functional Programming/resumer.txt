@@ -1,0 +1,14 @@
+Les callbacks sont des fonctions qu'on peut passer dans une autre fonction pour decider 
+de l'invocation de celle-ci
+
+Les fonctions de premiere class sont des fonctions qu'on peut affeter a une variable,
+ passer dans une autre fonction ou renvoye par une autre function
+
+les fonctions d'odre supererieur sont des fonctions qui prenent prenent pour parametre une 
+fonction et renvoi une function comme valeur de retour
+
+Lorsque les fonctions sont transmises à une autre fonction ou renvoyées par une autre fonction,
+les fonctions qui sont transmises ou renvoyées peuvent être appelées lambda.
+
+La programmation fonctionnelle est une forme de programmation déclarative.
+Vous dites à l'ordinateur ce que vous voulez faire en appelant une méthode ou une fonction.
