@@ -12,3 +12,21 @@ les fonctions qui sont transmises ou renvoyées peuvent être appelées lambda.
 
 La programmation fonctionnelle est une forme de programmation déclarative.
 Vous dites à l'ordinateur ce que vous voulez faire en appelant une méthode ou une fonction.
+
+L'un des principes fondamentaux de la programmation fonctionnelle est de ne pas changer les choses. 
+Les changements conduisent à des bogues. Il est plus facile d'éviter les bogues en sachant que vos
+fonctions ne changent rien, y compris les arguments de fonction ou toute variable globale.
+
+Rappelez-vous que dans la programmation fonctionnelle, changer ou modifier des choses s'appelle
+une mutation et que le résultat est appelé un effet secondaire . Une fonction, idéalement, devrait 
+être une fonction pure , ce qui signifie qu'elle ne provoque aucun effet secondaire.
+
+Jusqu'à présent, nous avons vu deux principes distincts pour la programmation fonctionnelle:
+
+Ne modifiez pas une variable ou un objet - créez de nouvelles variables et objets et renvoyez-les 
+si nécessaire à partir d'une fonction. Astuce: utiliser quelque chose comme var newArr = arrVar,
+où arrVarest un tableau créera simplement une référence à la variable existante et non une copie. 
+Donc, changer une valeur dans newArrchangerait la valeur dans arrVar.
+
+Déclarez les paramètres de la fonction - tout calcul à l'intérieur d'une fonction ne dépend que des
+ arguments passés à la fonction, et non d'aucun objet ou variable global.
