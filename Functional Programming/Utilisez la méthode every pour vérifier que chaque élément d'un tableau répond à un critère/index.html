@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilisez la méthode every pour vérifier que chaque élément d'un tableau répond à un critère
+    </title>
+</head>
+
+<body>
+    <script>
+        // La everyméthode fonctionne avec des tableaux pour
+        //  vérifier si chaque élément réussit un test 
+        //  particulier. Il renvoie une valeur booléenne 
+        //  - truesi toutes les valeurs répondent aux critères, 
+        //  falsesinon.
+
+
+        var numbers = [1, 5, 8, 0, 10, 11];
+        let result = numbers.every(function (currentValue) {
+            return currentValue < 10;
+        });
+        // console.log(result); => False
+    </script>
+</body>
+
+</html>
