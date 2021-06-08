@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utiliser des fonctions d'ordre supérieur mapper, filtrer ou réduire pour résoudre un problème complexe
+    </title>
+</head>
+
+<body>
+    <script>
+        const squareList = arr => {
+            // Only change code below this line
+            return arr.reduce((previous, current, index, array) => {
+                if (Number.isInteger(current) && parseFloat(current) > 0) {
+                    previous.push(current * current)
+                }
+                return previous
+            }, [])
+
+            // Only change code above this line
+        };
+
+        const squaredIntegers = squareList([-3, 4.8, 5, 3, -3.2]);
+        console.log(squaredIntegers);
+    </script>
+</body>
+
+</html>
