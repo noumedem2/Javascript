@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cas de robinet spinal</title>
+</head>
+
+<body>
+    <script>
+        function spinalCase(str) {
+            return str.replace("-", " ").split("").map(val => {
+                if (val == val.toUpperCase()) {
+                    if (val != "_")
+                        return " " + val.toLowerCase();
+                } else
+                    return val
+            }).join("").match(/\w+/g).join("-")
+        }
+
+        console.log(
+            spinalCase('This Is Spinal Tap'),
+            spinalCase("thisIsSpinalTap"),
+            spinalCase("The_Andy_Griffith_Show"),
+            spinalCase("Teletubbies say Eh-oh"),
+            spinalCase("AllThe-small Things")
+        );
+    </script>
+</body>
+
+</html>
